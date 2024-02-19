@@ -726,6 +726,11 @@ section {
         row-gap: 1rem;
     }
 
+    .skills-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .experience-section {
         padding-left: 1rem;
         padding-right: 1rem;
