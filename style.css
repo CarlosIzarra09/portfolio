@@ -259,10 +259,6 @@ section {
     gap: 24px;
 }
 
-.aboutme-section .information-container .title {
-    font-size: 1.875rem;
-}
-
 .aboutme-section .information-container .description {
     gap: 16px;
 }
@@ -270,6 +266,8 @@ section {
 .aboutme-section .information-container .title {
     color: var(--gray-dark-900);
     font-family: 'Inter', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
 }
 
 .aboutme-section .information-container .description p {
@@ -683,6 +681,11 @@ section {
         display: none;
     }
 
+    .hero-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 
     .hero-section .photo-container {
         align-content: center;
@@ -695,6 +698,16 @@ section {
         width: 240px;
         height: 280px;
         box-shadow: -20px 20px var(--gray-dark-200), 20px 20px var(--gray-dark-200) ;
+    }
+
+    .aboutme-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+    .aboutme-section .information-container .title {
+        font-size: 1.5rem;
     }
 
     .aboutme-section .photo-container {
@@ -712,4 +725,15 @@ section {
         grid-template-columns: repeat(3,minmax(0,1fr));
         row-gap: 1rem;
     }
+
+    .experience-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .work-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 }
