@@ -471,10 +471,12 @@ section {
     align-items: center;
     gap: 3rem;
     width: 100%;
-    max-height: 480px;
+    
 }
 
 .work-section .section-container .container-work {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     max-width: 78.5rem;
 }
@@ -483,10 +485,14 @@ section {
     background-color: var(--gray-dark-200);
     border-radius: 12px 0px 0px 12px;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-work .preview-work-column img {
-    object-fit: cover;
+    width: 100%;
+    object-fit: cover   ;
     border-radius: 12px;
     color: transparent;
     transition-duration: .5s;
@@ -570,10 +576,85 @@ section {
         font-size: 2.75rem;
     }
 
+    .hero-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .aboutme-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .skills-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
     .skills-section .section-container {
         grid-template-columns: repeat(6,minmax(0,1fr));
         row-gap: 2rem;
     }
+
+    .experience-section .section-container .experience-container:first-child .container-company-logo {
+        width: 100%;
+    }
+
+    .experience-section .section-container .experience-container:first-child .container-company-logo img {
+        width: 200px !important; 
+    }
+
+    .experience-section .section-container .experience-container {
+        flex-direction: column;
+        gap: 1.125rem;
+    }
+
+    .experience-container .container-description {
+        order: 3;
+        width: 100%;
+    }
+
+    .experience-container .container-description .description__title {
+        font-size: 1rem;
+    }
+
+    .experience-container .container-description .description__activities {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .experience-container .container-period {
+        order: 2;
+        width: 100%;
+        text-align: start;
+    }
+
+    .experience-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 1.5rem;
+    }
+
+    .experience-section .section-container {
+        gap: 1.5rem;
+    }
+
+    .work-section .section-container .container-work {
+        flex-direction: column;
+        max-width: 78.5rem;
+    }
+
+    .work-section .section-container .container-work .preview-work-column {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .work-section .section-container .container-work .description-work-column {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+    }
+
 }
 
 /*Breakpint md*/
