@@ -275,6 +275,7 @@ section {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 0 !important;
 }
 
 /*Skills*/
@@ -737,8 +738,21 @@ section {
     }
 
     .work-section {
+        gap: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .work-section .section-container {
+        gap: 2rem;
+    }
+
+    .container-work .preview-work-column {
+        padding: 1.5rem;
+    }
+
+    .container-work .description-work-column {
+        padding: 1.5rem;
     }
 
 }
